@@ -3,7 +3,7 @@ services:
     autowire: true
     autoconfigure: true
     public: false
-  HauerHeinrich\HhThemeDefault\EventListener\AfterExtensionInstall:
+  HauerHeinrich\HhThemeWebmonitor\EventListener\AfterExtensionInstall:
     tags:
       - name: event.listener
         identifier: 'afterExtensionInstall'

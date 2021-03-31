@@ -10,8 +10,8 @@ config {
     removeDefaultCss = 1
     moveJsFromHeaderToFooter = 0
     disableImgBorderAttr = 1
-    no_cache = {$plugin.hhthemedefault.cache}
-    cache_period = {$plugin.hhthemedefault.cacheperiod}
+    no_cache = {$plugin.hhthemewebmonitor.cache}
+    cache_period = {$plugin.hhthemewebmonitor.cacheperiod}
     extTarget = _blank
     contentObjectExceptionHandler = 1
     ### is set in fluid layout file
@@ -33,14 +33,14 @@ config {
     ################################################################
     ### CSS & JS Komprimieren ###
     ################################################################
-    compressCss = {$plugin.hhthemedefault.compress}
-    compressJs = {$plugin.hhthemedefault.compress}
+    compressCss = {$plugin.hhthemewebmonitor.compress}
+    compressJs = {$plugin.hhthemewebmonitor.compress}
 
     ################################################################
     ### CSS & JS Zusammenfassen zu jeweils einer Datei ###
     ################################################################
-    concatenateCss = {$plugin.hhthemedefault.concatenate}
-    concatenateJs = {$plugin.hhthemedefault.concatenate}
+    concatenateCss = {$plugin.hhthemewebmonitor.concatenate}
+    concatenateJs = {$plugin.hhthemewebmonitor.concatenate}
 }
 
 page {

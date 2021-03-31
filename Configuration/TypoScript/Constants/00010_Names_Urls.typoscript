@@ -1,7 +1,7 @@
 themeDefault {
-    name = hh_theme_default
+    name = hh_theme_webmonitor
     urls {
-        themeResources = typo3conf/ext/hh_theme_default/Resources/
-        themeFileadmin = fileadmin/hh_theme_default/
+        themeResources = typo3conf/ext/hh_theme_webmonitor/Resources/
+        themeFileadmin = fileadmin/hh_theme_webmonitor/
     }
 }

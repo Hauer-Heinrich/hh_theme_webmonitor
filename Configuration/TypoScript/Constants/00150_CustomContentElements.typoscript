@@ -1,12 +1,12 @@
-plugin.tx_hhthemedefault {
+plugin.tx_hhthemewebmonitor {
     view {
-        # cat=hh_theme_default/file; type=string; label=Path to template root (FE)
+        # cat=hh_theme_webmonitor/file; type=string; label=Path to template root (FE)
         templateRootPath =
 
-        # cat=hh_theme_default/file; type=string; label=Path to template partials (FE)
+        # cat=hh_theme_webmonitor/file; type=string; label=Path to template partials (FE)
         partialRootPath =
 
-        # cat=hh_theme_default/file; type=string; label=Path to template layouts (FE)
+        # cat=hh_theme_webmonitor/file; type=string; label=Path to template layouts (FE)
         layoutRootPath =
     }
 }

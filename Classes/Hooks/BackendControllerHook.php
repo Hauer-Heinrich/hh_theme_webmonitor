@@ -1,5 +1,5 @@
 <?php
-namespace HauerHeinrich\HhThemeDefault\Hooks;
+namespace HauerHeinrich\HhThemeWebmonitor\Hooks;
 
 // use TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 
@@ -15,7 +15,7 @@ class BackendControllerHook {
     protected $extensionKey;
 
     public function __construct() {
-        $this->extensionKey = 'hh_theme_default';
+        $this->extensionKey = 'hh_theme_webmonitor';
     }
 
     /**
@@ -38,6 +38,6 @@ class BackendControllerHook {
         $path = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->extensionKey);
 
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
-        $pageRenderer->loadRequireJsModule('TYPO3/CMS/HhThemeDefault/Backend/Bemain');
+        $pageRenderer->loadRequireJsModule('TYPO3/CMS/HhThemeWebmonitor/Backend/Bemain');
     }
 }

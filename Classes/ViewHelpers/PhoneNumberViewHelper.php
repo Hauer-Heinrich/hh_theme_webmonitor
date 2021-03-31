@@ -1,5 +1,5 @@
 <?php
-namespace HauerHeinrich\HhThemeDefault\ViewHelpers;
+namespace HauerHeinrich\HhThemeWebmonitor\ViewHelpers;
 
 /***************************************************************
  * Copyright notice

@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') || die();
 
 call_user_func(function() {
-    $extensionKey = 'hh_theme_default';
+    $extensionKey = 'hh_theme_webmonitor';
 
     // Add addRootLineFields for example slide in TypoScript
     $rootLineFields = &$GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'];
@@ -51,17 +51,17 @@ call_user_func(function() {
     };
 
     // Add UserTS config as default for all BE users
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hh_theme_default/Configuration/TsConfig/User/0100_default.typoscript">');
+    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig('<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hh_theme_webmonitor/Configuration/TsConfig/User/0100_default.typoscript">');
 
     // Register "hhdefault" as global fluid namespace
-    $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['hhdefault'] = ['HauerHeinrich\\HhThemeDefault\\ViewHelpers'];
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['fluid']['namespaces']['hhdefault'] = ['HauerHeinrich\\HhThemeWebmonitor\\ViewHelpers'];
 
     // System information toolbar
     \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class)
         ->connect(
             \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem::class,
             'getSystemInformation',
-            \HauerHeinrich\HhThemeDefault\Backend\ToolbarItem\SystemInformationToolbarItemGit::class,
+            \HauerHeinrich\HhThemeWebmonitor\Backend\ToolbarItem\SystemInformationToolbarItemGit::class,
             'addGitInformation'
         );
 });

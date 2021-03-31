@@ -1,5 +1,5 @@
 <?php
-namespace HauerHeinrich\HhThemeDefault\Backend\ToolbarItem;
+namespace HauerHeinrich\HhThemeWebmonitor\Backend\ToolbarItem;
 
 // use \TYPO3\CMS\Extbase\Utility\DebuggerUtility;
 use \TYPO3\CMS\Backend\Backend\ToolbarItems\SystemInformationToolbarItem;
@@ -14,7 +14,7 @@ class SystemInformationToolbarItemGit {
     protected $extensionKey;
 
     public function __construct() {
-        $this->extensionKey = 'hh_theme_default';
+        $this->extensionKey = 'hh_theme_webmonitor';
     }
 
     public function addGitInformation(SystemInformationToolbarItem $systemInformation) {

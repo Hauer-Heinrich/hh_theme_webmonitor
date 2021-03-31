@@ -12,7 +12,7 @@
     "license": "GPL-2.0",
     "keywords": ["TYPO3 CMS", "Theme", "Distribution"],
     "replace": {
-        "hh_theme_default": "self.version",
+        "hh_theme_webmonitor": "self.version",
         "typo3-ter/hh-theme-default": "self.version"
     },
     "require": {
@@ -34,12 +34,12 @@
     },
     "autoload": {
         "psr-4": {
-            "HauerHeinrich\\HhThemeDefault\\": "Classes"
+            "HauerHeinrich\\HhThemeWebmonitor\\": "Classes"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "hh_theme_default"
+            "extension-key": "hh_theme_webmonitor"
         }
     }
 }

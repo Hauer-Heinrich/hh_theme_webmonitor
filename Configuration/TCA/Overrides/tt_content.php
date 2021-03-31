@@ -10,7 +10,7 @@ call_user_func(function() {
 // Configure new fields:
 $fields = [
     'header_style' => [
-        'label' => 'LLL:EXT:hh_theme_default/Resources/Private/Language/locallang_pageconfig.xlf:tceform.ttContent.headerStyle',
+        'label' => 'LLL:EXT:hh_theme_webmonitor/Resources/Private/Language/locallang_pageconfig.xlf:tceform.ttContent.headerStyle',
         'exclude' => 1,
         'config' => [
             'type' => 'select',

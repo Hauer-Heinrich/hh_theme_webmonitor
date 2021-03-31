@@ -1,10 +1,10 @@
-# hh_theme_default (Warning: Is under heavy development!)
+# hh_theme_webmonitor (Warning: Is under heavy development!)
 ## do not use it now - only test and give feedback :grinning:
-hh_theme_default is a TYPO3 extension / distribution.
+hh_theme_webmonitor is a TYPO3 extension / distribution.
 This theme is to try out or use as a kick-start for your own theme/project - it can also be extended or overwritten (TODO: add a link for an example extension)
 
 ### Extensions
-hh_theme_default is currently extended with the following extensions. Instructions on how to use them in your own application are linked below.
+hh_theme_webmonitor is currently extended with the following extensions. Instructions on how to use them in your own application are linked below.
 
 Extension | README
 ------------ | -------------
@@ -12,7 +12,7 @@ hh_slider | [https://github.com/Hauer-Heinrich/hh_slider/blob/master/README.md]
 hh_seo | [https://github.com/Hauer-Heinrich/hh_seo/blob/master/README.md]
 
 ### Plugins
-hh_theme_default is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+hh_theme_webmonitor is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
 
 Plugin | README
 ------------ | -------------
@@ -46,7 +46,7 @@ Don't forget to include the PageTS -> backend->rootPage->site configuration->res
 
 Want to contribute? Great!
 
-hh_theme_default uses [GULP](https://github.com/iocron/typo3-gulp-scss/ "gulp") for fast developing.
+hh_theme_webmonitor uses [GULP](https://github.com/iocron/typo3-gulp-scss/ "gulp") for fast developing.
 Make a change in your file and instantaneously see your updates!
 
 Open your favorite Terminal and run these commands in the theme folder.

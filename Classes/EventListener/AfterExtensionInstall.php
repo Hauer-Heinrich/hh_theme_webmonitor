@@ -1,5 +1,5 @@
 <?php
-namespace HauerHeinrich\HhThemeDefault\EventListener;
+namespace HauerHeinrich\HhThemeWebmonitor\EventListener;
 
 /*
  * This file is part of the TYPO3 CMS project.
@@ -39,7 +39,7 @@ class AfterExtensionInstall implements SingletonInterface {
     protected $logger;
 
     function __construct() {
-        $this->extensionKey = 'hh_theme_default';
+        $this->extensionKey = 'hh_theme_webmonitor';
         $this->logger = GeneralUtility::makeInstance(\TYPO3\CMS\Core\Log\LogManager::class)->getLogger(static::class);
     }
 

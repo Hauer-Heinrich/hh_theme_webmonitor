@@ -97,7 +97,7 @@ page {
                 languages = auto
                 as = MenuLanguage
 
-                if.isTrue = {$plugin.hhthemedefault.multiLanguage}
+                if.isTrue = {$plugin.hhthemewebmonitor.multiLanguage}
             }
 
             ################################################################
@@ -106,7 +106,7 @@ page {
             90 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             90 {
                 special = directory
-                special.value = {$plugin.hhthemedefault.additionalTopMenu}
+                special.value = {$plugin.hhthemewebmonitor.additionalTopMenu}
                 entryLevel = 0
                 levels = 1
                 expandAll = 1
@@ -120,7 +120,7 @@ page {
                 }
                 as = AdditionalTopMenu
 
-                if.isTrue = {$plugin.hhthemedefault.additionalTopMenu}
+                if.isTrue = {$plugin.hhthemewebmonitor.additionalTopMenu}
             }
 
             ################################################################
@@ -129,7 +129,7 @@ page {
             # 95 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             # 95 {
             #     special = directory
-            #     special.value = {$plugin.hhthemedefault.footerMenu}
+            #     special.value = {$plugin.hhthemewebmonitor.footerMenu}
             #     entryLevel = 0
             #     levels = 1
             #     expandAll = 1
@@ -144,7 +144,7 @@ page {
             # 96 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             # 96 {
             #     special = directory
-            #     special.value = {$plugin.hhthemedefault.socialMenu}
+            #     special.value = {$plugin.hhthemewebmonitor.socialMenu}
             #     entryLevel = 0
             #     levels = 1
             #     expandAll = 1
@@ -165,7 +165,7 @@ page {
             # 100 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
             # 100 {
             #     special = directory
-            #     special.value = {$plugin.hhthemedefault.quickLinks}
+            #     special.value = {$plugin.hhthemewebmonitor.quickLinks}
             #     entryLevel = 0
             #     levels = 7
             #     expandAll = 1
@@ -182,8 +182,8 @@ page {
         }
 
         settings {
-            indexedSearchId = {$plugin.hhthemedefault.indexedSearchId}
-            breadcrumbSeparator = {$plugin.hhthemedefault.breadcrumbSeparator}
+            indexedSearchId = {$plugin.hhthemewebmonitor.indexedSearchId}
+            breadcrumbSeparator = {$plugin.hhthemewebmonitor.breadcrumbSeparator}
         }
 
         variables {
@@ -226,7 +226,7 @@ page {
                 table = tt_content
                 select {
                     where = colPos = 1000
-                    pidInList = {$plugin.hhthemedefault.footerSeitenID}
+                    pidInList = {$plugin.hhthemewebmonitor.footerSeitenID}
                     orderBy = sorting ASC, colPos ASC
                     languageField = sys_language_uid
                 }

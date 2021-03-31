@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') || die();
 
 call_user_func(function() {
-    $extensionKey = 'hh_theme_default';
+    $extensionKey = 'hh_theme_webmonitor';
     // $extensionName = strtolower(\TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($extensionKey));
     // $className = \TYPO3\CMS\Core\Utility\GeneralUtility::underscoredToUpperCamelCase($extensionKey);
 
@@ -13,10 +13,10 @@ call_user_func(function() {
     if (TYPO3_MODE === 'BE' || TYPO3_MODE === 'FE' && isset($GLOBALS['BE_USER'])) {
         // add CSS and JS in TYPO3-BE
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/backend.php']['constructPostProcess'][]
-            = \HauerHeinrich\HhThemeDefault\Hooks\BackendControllerHook::class . '->addCss';
+            = \HauerHeinrich\HhThemeWebmonitor\Hooks\BackendControllerHook::class . '->addCss';
 
         $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['typo3/backend.php']['constructPostProcess'][]
-            = \HauerHeinrich\HhThemeDefault\Hooks\BackendControllerHook::class . '->addJavaScript';
+            = \HauerHeinrich\HhThemeWebmonitor\Hooks\BackendControllerHook::class . '->addJavaScript';
     }
 
     // Backend CSS
