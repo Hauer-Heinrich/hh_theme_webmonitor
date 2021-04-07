@@ -9,7 +9,7 @@ if (file_exists($databaseCredentialsFile)) { require_once ($databaseCredentialsF
 
 $customChanges = [
     'BE' => [
-        'lockSSL' => 1,
+        'lockSSL' => 0,
         'loginSecurityLevel' => 'normal',
         'compressionLevel' => '0',
         'versionNumberInFilename' => 0,
@@ -36,7 +36,7 @@ $customChanges = [
         ]
     ],
     'HTTP' => [
-        'verify' => 1,
+        'verify' => 0,
     ],
     'SYS' => [
         'displayErrors' => 0,
