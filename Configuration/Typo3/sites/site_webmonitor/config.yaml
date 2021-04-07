@@ -1,11 +1,11 @@
 rootPageId: 1
-base: 'http://www.webmonitor'
+base: 'http://webmonitor'
 baseVariants:
   -
     base: 'http://preview.webmonitor'
     condition: 'applicationContext == "Development/Server"'
   -
-    base: 'http://webmonitor.localhost'
+    base: 'http://webmonitor.hauer-heinrich.localhost'
     condition: 'applicationContext == "Development"'
 languages:
   -
