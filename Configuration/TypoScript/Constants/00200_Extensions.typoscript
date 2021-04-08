@@ -59,13 +59,3 @@ plugin.tx_powermail {
 ### Hauer-Heinrich Slider - hh_slider ###
 ################################################################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:hh_slider/Configuration/TypoScript/constants.typoscript">
-
-################################################################
-### Hauer-Heinrich SEO - hh_seo ###
-################################################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hh_seo/Configuration/TypoScript/constants.typoscript">
-
-################################################################
-### Hauer-Heinrich Cookie Consent - hh_ext_cookie_consent ###
-################################################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hh_ext_cookie_consent/Configuration/TypoScript/constants.typoscript">

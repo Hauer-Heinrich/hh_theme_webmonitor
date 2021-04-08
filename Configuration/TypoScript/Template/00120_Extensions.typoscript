@@ -136,13 +136,3 @@ tt_content.hhslider_hh_slider {
         jsFile >
     }
 }
-
-################################################################
-### Hauer-Heinrich SEO - hh_seo ###
-################################################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hh_seo/Configuration/TypoScript/setup.typoscript">
-
-################################################################
-### Hauer-Heinrich Cookie Consent - hh_ext_cookie_consent ###
-################################################################
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:hh_ext_cookie_consent/Configuration/TypoScript/setup.typoscript">
