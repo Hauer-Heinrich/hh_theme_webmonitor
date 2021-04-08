@@ -81,11 +81,13 @@ class AfterExtensionInstall implements SingletonInterface {
             if(file_exists($path)) {
                 $extService = GeneralUtility::makeInstance(ExtService::class);
                 $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
-                $disableExtensions = include $path;
+                $disableExtensions = include_once $path;
 
-                foreach ($disableExtensions as $key => $value) {
-                    if($extService->isAvailable($value)) {
-                        $objectManager->get(InstallUtility::class)->uninstall($value);
+                if(!empty($disableExtensions) && is_array($disableExtensions)) {
+                    foreach ($disableExtensions as $key => $value) {
+                        if($extService->isAvailable($value)) {
+                            $objectManager->get(InstallUtility::class)->uninstall($value);
+                        }
                     }
                 }
             }

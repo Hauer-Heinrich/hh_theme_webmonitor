@@ -16,7 +16,7 @@ languages:
     typo3Language: de
     locale: de_DE.UTF-8
     iso-639-1: de
-    navigationTitle:  DE
+    navigationTitle: DE
     hreflang: de
     direction: ltr
     fallbackType: strict
